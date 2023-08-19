@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<header>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.data.menu.description }}</p>
+</header>
+
+{%-for section in site.data.menu.sections-%}
+  <b>{{ section.title }}</b>
+  {%-include menu_item.html collection=section.entries-%}
+{%-endfor-%}
+
+{{ content }}

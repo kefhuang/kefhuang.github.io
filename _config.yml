@@ -1,0 +1,22 @@
+# Site settings
+title: Kefeng Huang
+email: your-email@example.com
+url: "https://kefhuang.dev" 
+baseurl: "" 
+twitter_username: kefhuang
+github_username:  kefhuang
+
+permalihnk: /:slug
+favicon: /assets/images/logo.png
+
+# Build settings
+theme: no-style-please
+theme_config:
+  apperance: "auto"
+  back_home_text: ".."
+  date_format: "%Y-%m-%d"
+  show_description: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
