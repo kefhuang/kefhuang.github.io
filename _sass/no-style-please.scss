@@ -45,6 +45,12 @@ li { margin: 0.4rem 0; }
 
 *:target { background: yellow; }
 
+.abstract {
+  font-style: italic;
+  width: 90%;
+  font-size: 0.9rem;
+}
+
 .w {
   max-width: 750px;
   margin: 0 auto;

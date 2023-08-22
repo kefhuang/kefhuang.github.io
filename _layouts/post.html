@@ -8,8 +8,26 @@ layout: default
   <p class="post-meta">
     <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
   </p>
-  
+
   <h1>{{ page.title }}</h1>
+
+  {% if page.arthur %}
+    <p> {{ page.arthur }} </p>
+  {% endif %}
+
+  {% if page.file %}
+    [<a href="{{ site.baseurl }}{{ page.file }}">pdf</a>]
+  {% endif %}
+  
+  {% if page.github %}
+    [<a href="{{ page.github }}">github</a>]
+  {% endif %} 
+
+  {% if page.abstract %}
+    <p class="abstract"> {{ page.abstract }} </p>
+    <hr>
+  {% endif %}
+
 
   {{ content }}
 </article>
